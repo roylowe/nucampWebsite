@@ -1,0 +1,5 @@
+Git repository
+
+https://github.com/roylowe/nucampWebsite.git
+
+git remote add origin https://github.com/roylowe/nucampWebsite.git
