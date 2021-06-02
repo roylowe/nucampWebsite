@@ -3,3 +3,6 @@ Git repository
 https://github.com/roylowe/nucampWebsite.git
 
 git remote add origin https://github.com/roylowe/nucampWebsite.git
+
+command for initial push to remote repository
+git push -u origin main
