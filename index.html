@@ -15,6 +15,7 @@
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 <body>
+    <!--Create a larger Title section at the top of the web page-->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-content align-items-center">
@@ -24,6 +25,11 @@
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <!-- reserve campsite button in it's own column-->
+                <!--Added a margin to align the button with the rest of the content on the right and a margin at the top to separate the button from the logo on small screens-->
+                <div class="col-md-4 col-xl-2 d-flex mr-4 mt-4"> 
+                    <a class="btn btn-info btn-lg text-nowrap" href="#reserveForm" role="button">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -96,7 +102,7 @@
                 <div class="card">
                     <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
                     <div class="card-body">
-                        <form>
+                        <form id="reserveForm">
                             <div class="form-group row">
                                 <div class="col-xs-12 col-sm-6 col-form-label">
                                     <label for="numCampers">Number of Campers</label>
@@ -104,12 +110,12 @@
                                 <div class="col-xs-12 col">
                                     <select id="numCampers" name="numCampers">
                                         <option selected>Select...</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                        <option value="4">Four</option>
-                                        <option value="5">Five</option>
-                                        <option value="6">Six</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
                                     </select>
                                 </div>
                             </div>
