@@ -51,7 +51,7 @@
                                     <label for="numCampers">Number of Campers</label>
                                 </div> 
                                 <div class="col-xs-12 col">
-                                    <select id="numCampers" name="numCampers">
+                                    <select class="form-control" id="numCampers" name="numCampers">
                                         <option selected>Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -70,6 +70,24 @@
                                     <input class="form-control" type="date" id="date" name="date" />
                                 </div>                                
                             </div>
+                            <!--Adding radio buttons for tent or RV-->
+                            <div class="form-group row">
+                                <div class="col-sm-6 col-form-label">
+                                    <label>Campsite Type</label>
+                                </div>
+                                <div class="col-2">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons" role="group">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="site-type" id="site-tent" value="tent" checked>Tent
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="site-type" id="site-rv" value="rv">RV
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
                             <div class="form-group row">
                                 <div class="col">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -233,7 +251,9 @@
                 </div>
             </div>
         </div>
-        <div class="row row-content">
+        <!--comment out old reservation form since a modal replaces it
+            
+            <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
@@ -271,9 +291,10 @@
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
+ -->
+        
     </div>
     <footer class="Site-footer">
         <div class="container">
