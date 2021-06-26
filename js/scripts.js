@@ -13,5 +13,20 @@ $(function(){
 
         }
     });
+
    
-});
+    //reservation modal button function
+
+    $('#reserve-button').click(function(){
+
+        $('#reserveModal').modal('show');
+    });
+       
+    $('#login-button').click(function(){
+
+        $('#loginModal').modal('show');
+    });
+
+   
+   
+})

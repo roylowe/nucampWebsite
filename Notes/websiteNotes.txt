@@ -6,3 +6,27 @@ git remote add origin https://github.com/roylowe/nucampWebsite.git
 
 command for initial push to remote repository
 git push -u origin main
+
+
+Install dependencies for vs code
+
+Next, install the package dependencies for this project, making sure to use the provided version numbers below. Make sure you are in the nucampsite folder in your terminal.
+You will see some warnings and notices. You can safely ignore these. If you see any messages explicitly marked "ERR" or "Error", try to debug the error (was there a typo?) and ask in the course Slack channel if you cannot resolve it.
+npm install lite-server --save-dev
+npm install jquery@3.5.1 popper.js@1.16.1
+npm install bootstrap@4.5.2
+The --save-dev flag means that lite-server is being installed as a development dependency, which means that later, when you build your project for deployment, it will not be included in the final build files, since it is only needed during development. 
+You'll notice that a "package-lock.json" file  was automatically created after installing packages. This is expected and should be left alone.
+
+contenful --- a free CMS
+
+coudinary.com  site of media for websites
+
+Automation workflows
+Grunt
+Gulp -- suggested
+webpack --- heavy content  snowpack may be better
+
+look at this premade UI:
+
+https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html
